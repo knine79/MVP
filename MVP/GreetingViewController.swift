@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol GreetingViewType: class { // view는 상태를 가지고 있어야 하니까 reference type으로
+protocol GreetingView: class { // view는 상태를 가지고 있어야 하니까 reference type으로
     func setGreeting(greeting: String)
 }
 
-class GreetingViewController: UIViewController, GreetingViewType {
+class GreetingViewController: UIViewController, GreetingView {
     
     var presenter: GreetingPresenterType!
     
